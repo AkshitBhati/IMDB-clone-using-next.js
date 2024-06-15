@@ -1,5 +1,5 @@
 import Results from '@/components/Results'
-
+import { Suspense } from 'react'
 
 const page = async({ searchParams}) => {
 
@@ -18,10 +18,10 @@ const page = async({ searchParams}) => {
   const result = data.results
  
   return (
-    <div>
+    <Suspense>
       <Results results={result}/>
       
-    </div>
+    </Suspense>
   )
 }
 

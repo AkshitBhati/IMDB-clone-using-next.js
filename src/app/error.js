@@ -2,10 +2,11 @@
 
 import React, { useEffect } from 'react'
 
-export default function error({ error, reset }) {
+export default function Error({ error, reset }) {
     useEffect(() => {
         console.log(error)
     }, [error])
+    
   return (
 
     <div className='text-center mt-10'>
