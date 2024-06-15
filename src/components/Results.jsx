@@ -1,12 +1,11 @@
 import React from 'react'
+import Card from './Card'
 
 const Results = ({ results }) => {
   return (
-    <div>
+    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto'>
       {results.map((result, index) => (
-            <div key={index}>
-                <h2>{result.original_title}</h2>
-            </div>
+           <Card result={result}/>
           )
       )}
     </div>
